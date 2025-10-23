@@ -1,0 +1,80 @@
+ {
+  "label": "default",
+  "graphs": [
+    {
+      "id": "example_graph",
+      "nodes": [
+        {
+          "id": "node1",
+          "label": "node1",
+          "namespace": ""
+        },
+        {
+          "id": "layer1_n1",
+          "label": "layer1_n1",
+          "namespace": "layer1",
+          "incomingEdges": [
+            {
+              "sourceNodeId": "node1",
+              "sourceNodeOutputId": "0",
+              "targetNodeInputId": "0"
+            }
+          ]
+        },
+        {
+          "id": "layer1_n2",
+          "label": "layer1_n2",
+          "namespace": "layer1",
+          "incomingEdges": [
+            {
+              "sourceNodeId": "node1",
+              "sourceNodeOutputId": "0",
+              "targetNodeInputId": "0"
+            }
+          ]
+        },
+        {
+          "id": "node2",
+          "label": "node2",
+          "namespace": "",
+          "incomingEdges": [
+            {
+              "sourceNodeId": "layer1_n1",
+              "sourceNodeOutputId": "0",
+              "targetNodeInputId": "0"
+            },
+            {
+              "sourceNodeId": "layer1_n2",
+              "sourceNodeOutputId": "0",
+              "targetNodeInputId": "0"
+            }
+          ]
+        },
+        {
+          "id": "node3",
+          "label": "node3",
+          "namespace": "",
+          "incomingEdges": [
+            {
+              "sourceNodeId": "node2",
+              "sourceNodeOutputId": "0",
+              "targetNodeInputId": "0"
+            }
+          ]
+        },
+        {
+          "id": "node4",
+          "label": "node4",
+          "namespace": "",
+          "incomingEdges": [
+            {
+              "sourceNodeId": "node2",
+              "sourceNodeOutputId": "0",
+              "targetNodeInputId": "0"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
