@@ -43,6 +43,6 @@ body:
     id: skill-details
     attributes:
       label: Skill Description
-      description: Tell us what your skill does! Include examples, specific instructions (e.g. how to get tokens if your skill needs it), or screenshots.
+      description: Tell us what your skill does! Include examples, specific instructions (e.g. how to get token/api key if your skill needs it), or screenshots.
     validations:
       required: false
