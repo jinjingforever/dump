@@ -6,6 +6,10 @@ body:
         ## Share Your Skill!
         Fill out the form below to showcase what you have built.
 
+  - type: markdown
+    attributes:
+      value: "<br>"
+
   - type: input
     id: webhost-path
     attributes:
@@ -26,7 +30,7 @@ body:
 
   - type: markdown
     attributes:
-      value: "<br><br>"
+      value: "<br>"
 
   - type: input
     id: repo-link
@@ -34,6 +38,10 @@ body:
       label: Skill Source Repository
       description: Link to your source code repository.
       placeholder: https://github.com/{username}/{repo}/path/to/skill_folder
+
+  - type: markdown
+    attributes:
+      value: "<br>"
 
   - type: textarea
     id: skill-details
