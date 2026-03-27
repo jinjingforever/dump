@@ -11,14 +11,14 @@ body:
     attributes:
       label: Skill Webhost Path
       description: The live URL where your skill is hosted. Users will use this link to import your skill directly into the AI Edge Gallery app.
-      placeholder: https://username.github.io/repo-name/path/to/skill_folder
+      placeholder: https://{username}.github.io/{repo}/path/to/skill_folder
     validations:
       required: true
 
   - type: markdown
     attributes:
       value: |
-        > 💡 **Tip**: To ensure your path is correct, try loading `https://username.github.io/repo-name/path/to/skill_folder/**SKILL.md**` file in your browser. If it displays the raw content of the `SKILL.md`, you are good to go!
+        > 💡 **Tip**: To ensure your path is correct, try loading `https://{username}.github.io/{repo}/path/to/skill_folder/SKILL.md` file in your browser. If it displays the raw content of the `SKILL.md`, you are good to go!
   - type: markdown
     attributes:
       value: |
@@ -29,7 +29,7 @@ body:
     attributes:
       label: Skill Source Repository
       description: Link to your source code repository.
-      placeholder: https://github.com/username/repo-name/path/to/skill_folder
+      placeholder: https://github.com/{username}/{repo}/path/to/skill_folder
 
   - type: textarea
     id: skill-details
