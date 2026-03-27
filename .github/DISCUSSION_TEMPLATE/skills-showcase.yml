@@ -11,7 +11,7 @@ body:
     id: repo-link
     attributes:
       label: Skill Source Repository
-      description: Provide the link to your GitHub repository source code.
+      description: Link to your source code repository.
       placeholder: https://github.com/username/repo-name/path/to/skill
     validations:
       required: true
@@ -20,7 +20,7 @@ body:
     id: webhost-path
     attributes:
       label: Skill Webhost Path
-      description: The root path to the skill hosted on a web hosting service. User will use this url to import your skill into AI Edge Gallery app.
+      description: The live URL where your skill is hosted. Users will use this link to import your skill directly into the AI Edge Gallery app.
       placeholder: https://username.github.io/repo-name/path/to/skill
     validations:
       required: true
@@ -28,12 +28,12 @@ body:
   - type: markdown
     attributes:
       value: |
-        > ⚠️ **Note** This must be a live deployment (like GitHub Pages, Cloudflare, etc.). This **cannot** be a standard GitHub repository URL or a raw file link like `https://raw.githubusercontent.com/...`.
+        > ⚠️ **Important**: This must be a live web deployment (e.g., GitHub Pages, Vercel, Cloudflare, etc). Do not use a standard repository link or a `raw.githubusercontent.com` URL, as these will not work in the app.
 
   - type: textarea
     id: skill-details
     attributes:
-      label: More Info About the Skill
-      description: Provide instructions, descriptions, or screenshots. 
+      label: Skill Description
+      description: Tell us what your skill does! Include any specific instructions or screenshots.
     validations:
       required: false
