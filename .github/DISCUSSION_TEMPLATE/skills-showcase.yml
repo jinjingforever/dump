@@ -7,27 +7,29 @@ body:
         Fill out the form below to showcase what you have built.
 
   - type: input
-    id: repo-link
-    attributes:
-      label: Skill Source Repository
-      description: Link to your source code repository.
-      placeholder: https://github.com/username/repo-name/path/to/skill
-    validations:
-      required: true
-
-  - type: input
     id: webhost-path
     attributes:
       label: Skill Webhost Path
       description: The live URL where your skill is hosted. Users will use this link to import your skill directly into the AI Edge Gallery app.
-      placeholder: https://username.github.io/repo-name/path/to/skill
+      placeholder: https://username.github.io/repo-name/path/to/skill_folder
     validations:
       required: true
 
   - type: markdown
     attributes:
       value: |
+        > 💡 **Tip**: To ensure your path is correct, try loading `https://username.github.io/repo-name/path/to/skill_folder/**SKILL.md**` file in your browser. If it displays the raw content of the `SKILL.md`, you are good to go!
+  - type: markdown
+    attributes:
+      value: |
         > ⚠️ **Important**: This must be a live web deployment (e.g., GitHub Pages, Vercel, Cloudflare, etc). Do not use a standard repository link or a `raw.githubusercontent.com` URL, as these will not work in the app.
+
+  - type: input
+    id: repo-link
+    attributes:
+      label: Skill Source Repository
+      description: Link to your source code repository.
+      placeholder: https://github.com/username/repo-name/path/to/skill_folder
 
   - type: textarea
     id: skill-details
