@@ -1,0 +1,57 @@
+title: "[Skill] "
+labels: ["skills-showcase"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚀 Share Your Skill!
+        Fill out the form below to showcase what you have built.
+
+  - type: input
+    id: skill-name
+    attributes:
+      label: Skill Name
+      description: What is the name of your skill?
+      placeholder: e.g., Python Web Scraper, Three.js Portfolio
+    validations:
+      required: true
+
+  - type: input
+    id: repo-link
+    attributes:
+      label: Skill Source Repository
+      description: Provide the link to your GitHub repository source code.
+      placeholder: https://github.com/username/repo-name
+    validations:
+      required: true
+
+  - type: input
+    id: webhost-path
+    attributes:
+      label: Skill Webhost Path
+      description: The root path to the skill hosted on a web hosting service.
+      placeholder: e.g., https://username.github.io/repo-name/
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        > ⚠️ **Note on Webhost Path:** This must be a live deployment (like GitHub Pages, Vercel, Netlify, etc.). This **cannot** be a standard GitHub repository URL or a raw file link like `https://raw.githubusercontent.com/...`.
+
+  - type: textarea
+    id: skill-details
+    attributes:
+      label: More Info About the Skill
+      description: Provide instructions, descriptions, or link to screenshots. Markdown is fully supported here!
+      placeholder: |
+        ### Description
+        What does this skill do?
+
+        ### Instructions
+        How do we run or view it?
+        
+        ### Screenshots
+        ![Alt text](image_url)
+    validations:
+      required: false
