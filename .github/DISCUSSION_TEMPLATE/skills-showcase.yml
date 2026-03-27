@@ -18,7 +18,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        > 💡 **Tip**: To ensure your path is correct, try loading `https://{username}.github.io/{repo}/path/to/skill_folder/SKILL.md` file in your browser. If it displays the raw content of the `SKILL.md`, you are good to go!
+        > 💡 **Tip**: To ensure your path is correct, try loading `https://{username}.github.io/{repo}/path/to/skill_folder/SKILL.md` file in your browser. If it displays the raw file content, you are good to go!
   - type: markdown
     attributes:
       value: |
