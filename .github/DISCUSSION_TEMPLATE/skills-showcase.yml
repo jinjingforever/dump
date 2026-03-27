@@ -12,7 +12,7 @@ body:
     attributes:
       label: Skill Source Repository
       description: Provide the link to your GitHub repository source code.
-      placeholder: https://github.com/username/repo-name
+      placeholder: https://github.com/username/repo-name/path/to/skill
     validations:
       required: true
 
@@ -21,14 +21,14 @@ body:
     attributes:
       label: Skill Webhost Path
       description: The root path to the skill hosted on a web hosting service.
-      placeholder: e.g., https://username.github.io/repo-name/
+      placeholder: e.g., https://username.github.io/repo-name/path/to/skill
     validations:
-      required: false
+      required: true
 
   - type: markdown
     attributes:
       value: |
-        > ⚠️ **Note on Webhost Path:** This must be a live deployment (like GitHub Pages, Vercel, Netlify, etc.). This **cannot** be a standard GitHub repository URL or a raw file link like `https://raw.githubusercontent.com/...`.
+        > ⚠️ **Note on Webhost Path:** This must be a live deployment (like GitHub Pages, Cloudflare, etc.). This **cannot** be a standard GitHub repository URL or a raw file link like `https://raw.githubusercontent.com/...`.
 
   - type: textarea
     id: skill-details
