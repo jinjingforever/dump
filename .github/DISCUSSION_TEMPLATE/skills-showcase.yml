@@ -1,5 +1,4 @@
-title: "[Skill name] "
-labels: ["skills-showcase"]
+title: "[Skill Name]: Brief Description"
 body:
   - type: markdown
     attributes:
