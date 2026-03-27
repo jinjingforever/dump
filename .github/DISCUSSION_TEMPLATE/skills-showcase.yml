@@ -1,20 +1,11 @@
-title: "[Skill] "
+title: "[Skill name] "
 labels: ["skills-showcase"]
 body:
   - type: markdown
     attributes:
       value: |
-        ## 🚀 Share Your Skill!
+        ## Share Your Skill!
         Fill out the form below to showcase what you have built.
-
-  - type: input
-    id: skill-name
-    attributes:
-      label: Skill Name
-      description: What is the name of your skill?
-      placeholder: e.g., Python Web Scraper, Three.js Portfolio
-    validations:
-      required: true
 
   - type: input
     id: repo-link
