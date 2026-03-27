@@ -6,10 +6,6 @@ body:
         ## Share Your Skill!
         Fill out the form below to showcase what you have built.
 
-  - type: markdown
-    attributes:
-      value: "<br>"
-
   - type: input
     id: webhost-path
     attributes:
