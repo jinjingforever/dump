@@ -21,7 +21,7 @@ body:
     attributes:
       label: Skill Webhost Path
       description: The root path to the skill hosted on a web hosting service.
-      placeholder: e.g., https://username.github.io/repo-name/path/to/skill
+      placeholder: https://username.github.io/repo-name/path/to/skill
     validations:
       required: true
 
@@ -34,15 +34,6 @@ body:
     id: skill-details
     attributes:
       label: More Info About the Skill
-      description: Provide instructions, descriptions, or link to screenshots. Markdown is fully supported here!
-      placeholder: |
-        ### Description
-        What does this skill do?
-
-        ### Instructions
-        How do we run or view it?
-        
-        ### Screenshots
-        ![Alt text](image_url)
+      description: Provide instructions, descriptions, or screenshots. 
     validations:
       required: false
