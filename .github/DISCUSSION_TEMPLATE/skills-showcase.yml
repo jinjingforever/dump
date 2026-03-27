@@ -20,7 +20,7 @@ body:
     id: webhost-path
     attributes:
       label: Skill Webhost Path
-      description: The root path to the skill hosted on a web hosting service.
+      description: The root path to the skill hosted on a web hosting service. User will use this url to import your skill into AI Edge Gallery app.
       placeholder: https://username.github.io/repo-name/path/to/skill
     validations:
       required: true
@@ -28,7 +28,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        > ⚠️ **Note on Webhost Path:** This must be a live deployment (like GitHub Pages, Cloudflare, etc.). This **cannot** be a standard GitHub repository URL or a raw file link like `https://raw.githubusercontent.com/...`.
+        > ⚠️ **Note** This must be a live deployment (like GitHub Pages, Cloudflare, etc.). This **cannot** be a standard GitHub repository URL or a raw file link like `https://raw.githubusercontent.com/...`.
 
   - type: textarea
     id: skill-details
