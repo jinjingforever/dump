@@ -24,6 +24,10 @@ body:
       value: |
         > ⚠️ **Important**: This must be a live web deployment (e.g., GitHub Pages, Vercel, Cloudflare, etc). Do not use a standard repository link or a `raw.githubusercontent.com` URL, as these will not work in the app.
 
+  - type: markdown
+    attributes:
+      value: "<br><br>"
+
   - type: input
     id: repo-link
     attributes:
